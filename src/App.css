@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+.container{
+    background-image: url('../public/images/voice_image.jpg');
+    background-color: rgb(83, 66, 66);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.heading{
+    /* background-color: red; */
+    margin-top: 10px;
+}
+#speech{
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: rgb(12, 68, 235);
+}
+.text-area{
+    background-color: rgb(190, 175, 175);
+    position: relative;
+    top: 15px;
+    width: 500px;
+    height: 400px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    padding: 3px;
+    box-shadow: 0px -25px 20px -20px rgba(231, 220, 220, 0.45),
+                0px 25px 20px -20px rgba(226, 217, 217, 0.45);
+}
+.btns{
+    position: relative;
+    top: 29px;
+    /* background-color: teal; */
+    width: 400px;
+    display:flex;
+    justify-content: space-around;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+#start{
+    background-color: rgb(51, 212, 51);
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#start:hover{
+    background: #fff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#stop{
+    background-color: rgb(221, 32, 32);
 }
-
-.App-link {
-  color: #61dafb;
+#stop:hover{
+    background: #fff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#microphone{
+    color: aliceblue;
 }
